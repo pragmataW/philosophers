@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 16:02:23 by yciftci           #+#    #+#             */
-/*   Updated: 2023/05/30 11:04:54 by yciftci          ###   ########.fr       */
+/*   Updated: 2023/05/17 16:02:24 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	print(t_philo *philo, char opt)
 	{
 		printf("%llu %d has taken a fork\n", time, philo->philo_id);
 		printf("%llu %d has taken a fork\n", time, philo->philo_id);
-		printf("%llu %d is eating", time, philo->philo_id);
+		printf("%llu %d is eating\n", time, philo->philo_id);
 		philo->eating_now = 0;
 	}
 	else if (opt == 't' && !*(philo->is_done))

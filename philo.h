@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 16:02:16 by yciftci           #+#    #+#             */
-/*   Updated: 2023/05/30 10:43:49 by yciftci          ###   ########.fr       */
+/*   Updated: 2023/05/17 16:02:17 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ typedef struct s_philo
 	__uint64_t		needle_eat;
 	__uint64_t		needle_sleep;
 	__uint64_t		time_to_die;
-	int				must_eat;
+	__uint64_t		must_eat;
 	int				eating_now;
 	int				philo_count;
 	int				eat_count;

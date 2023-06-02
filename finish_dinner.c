@@ -6,7 +6,7 @@
 /*   By: yciftci <yciftci@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 16:01:41 by yciftci           #+#    #+#             */
-/*   Updated: 2023/05/30 11:02:17 by yciftci          ###   ########.fr       */
+/*   Updated: 2023/05/17 16:03:57 by yciftci          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	all_ate_control(t_philo **philos)
 	while (i < philos[0]->philo_count)
 	{
 		pthread_mutex_lock(philos[i]->last_eat_mutex);
-		if (philos[i]->must_eat > 0 && philos[i]->must_eat != -1)
+		if (philos[i]->must_eat != 0)
 		{
 			pthread_mutex_unlock(philos[i]->last_eat_mutex);
 			return (0);
